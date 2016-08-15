@@ -1,0 +1,80 @@
+﻿<!doctype html>
+<html>
+<head>
+<title>REGISTRATION FORM</title>
+<style>
+body
+{background-image:url("Stock-Photo.jpg");
+background-size:1390px 750px;}
+input{
+background-color:"white";}
+</style>
+</head>
+<body bgcolor="blue" text="white">
+<h3>REGISTRATION FORM</h3>
+<form action="home.htm" >
+<fieldset name="pinfo">
+<legend>PERSONAL INFORMATION</legend>
+<label for="name">NAME:</label>
+<input type=text name="txt name" placeholder="last name"/>
+<br/><br/>
+<label for="age">AGE:</label>&nbsp;&nbsp;
+<select>
+<optgroup label="children">
+<option>5-10 years</option>
+<option>10-15 years</option>
+</optgroup>
+<optgroup label="adults">
+<option selected="selected">16-25years</option>
+<option>26-40 years</option>
+<option>40 & above</option>
+</optgroup>
+</select>
+<label for="gender">GENDER:</label>&nbsp;&nbsp;
+<input type="radio" name="rdogender" checked="checked"/>male
+<input type="radio" name="rdogender"/>female
+<fieldset>
+</br>
+<fieldset name="cinfo">
+<legend>CONTACT INFORMATION</legend>
+<label for="address">address:</label>
+<textarea rows=3 cols=25 name=txtareaaddress>
+</textarea>
+<label for="email">email id:
+<input type=text name"email/>
+<label for="phone">mobile number:
+</label>
+<input type=tel name="telph"/>
+<br/><br/>
+</fieldset>
+<br/>
+<fieldset name="einfo">
+<legend> LOG IN INFORMATION </legend>
+<label for="username">username:</label>
+<input type=text name="username" required/>
+<br/><br/>
+<label for="password" form="f1">password:</label>
+<input type="password" name="pwdpwd" required>
+<label for="password" form="f1">retype password:</label>
+<input type="password" name="pwdpwd" required/>
+</fieldset>
+<br/>
+<fieldset name="sinfo">
+<legend>SECURITY INFORMATION</legend>
+<label for="security">security question:</label>
+<input type=textname="txtsec" list="securityques" size=25 required/>
+<datalist id="securityques">
+<option>who is your best friend?</option>
+<option>who is your favaurite  actor?</option>
+<option>where did yu do your schooling?</option>
+</datalist><labl for="security answer">security answer:</label>
+<input type=text name="textsecans" list="securityaswer" size=25 required/>
+</fieldset>
+<br/>
+<input type=checkbox name=chkterms required/>
+i accept the terms and conditions<br/>
+<br/>
+<input type=submit value="register"/></form>
+<input type=reset value="clear"/>
+</body>
+</html>
